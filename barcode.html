@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.5/barcodes/JsBarcode.code39.min.js" integrity="sha512-Z4zu7irW9osSDN90/Xql+iRkQBtB64OwBIhqeCzH9mSFwjYvZWZV1OoNvgUmN9FThDLbByllpspc0yJrXfErXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <title>tree tree t0rr m0uth</title>
-    </head>
-    <body>
-        <h1 class="title"><a href="index.html">tree tree t0rr m0uth</a> · <a href="utilities.html">Utilities</a> · School ID Barcode Generator</h1>
-        <input type="number" name="input" id="input"></input>
-        <button id="generate">Generate</button>
-        <svg id="barcode"></svg>
-        <script type="text/javascript">
-            document.getElementById("generate").addEventListener('click',function() {
-                var text = document.getElementById("input").value;
-                JsBarcode("#barcode",text);
-            });
-        </script>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="pfp.gif" type="image/gif" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.5/barcodes/JsBarcode.code39.min.js"
+        integrity="sha512-Z4zu7irW9osSDN90/Xql+iRkQBtB64OwBIhqeCzH9mSFwjYvZWZV1OoNvgUmN9FThDLbByllpspc0yJrXfErXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>tree tree t0rr m0uth</title>
+</head>
+
+<body>
+    <br>
+    <h1 class="title"><a href="index.html">tree tree t0rr m0uth</a> · <a href="utilities.html">Utilities</a> · School ID
+        Barcode Generator</h1>
+    <input type="number" name="input" id="input"></input>
+    <button id="generate">Generate</button>
+    <svg id="barcode"></svg>
+    <script type="text/javascript">
+        document.getElementById("generate").addEventListener('click', function () {
+            var text = document.getElementById("input").value;
+            JsBarcode("#barcode", text);
+        });
+    </script>
+</body>
+
 </html>
